@@ -147,6 +147,7 @@
     <ClCompile Include="Square.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="interactor.h" />
     <ClInclude Include="Linear.h" />
     <ClInclude Include="Series.h" />
     <ClInclude Include="Solution.h" />

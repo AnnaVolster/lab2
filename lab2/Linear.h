@@ -10,12 +10,14 @@ private:
     double b;
     double value;
 public:
-    
+    /*
     Linear() {
         k = 0;
         b = 0;
         value = NULL;
     }
+    */
+
     Linear(double _k, double _b) {
         _k = k;
         _b = b;

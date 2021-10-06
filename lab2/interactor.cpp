@@ -2,32 +2,42 @@
 #include "Linear.h"
 #include "Solution.h"
 #include "Square.h"
+#include "Series.h"
+#include "interactor.h"
 
 using namespace std;
 
-
-void interactor()
+void Interactor::interactor()
 {
 	int command;
-	cout << "Enter command: \n 1-Linear \n 2-Square";
+	Series source;
+	cout << "Choose type of equations: \n 1-Linear; \n 2-Square;\n";
 	cin >> command; if (command < 1 || command > 2)
 	{
-		throw std::exception("Enter correct command");
+		throw std::exception("Enter correct command:\n");
 	}
-	switch (command) {
-	case 1: {
-		cout << "Enter the number of equations";
-		double k, b;
-		cin >> k >> b;
+	else {
+		Solution* sol = nullptr;
 
-		break;
+		switch (command) {
+		case 1: {
+			cout << "Enter the arguments of the equation:\n";
+			double k, b;
+			cin >> k >> b;
+			sol = new Linear(k, b);
+			break;
 		}
-	case 2: {
-		cout << "Enter the number of equations";
-		double a, b, c;
-		cin >> a >> b >> c;
-
-		break;
+		case 2: {
+			cout << "Enter the arguments of the equations:\n";
+			double a, b, c;
+			cin >> a >> b >> c;
+			sol = new Square(a, b, c);
+			break;
+		}
+		}
+		if (sol) {
+			source.EnterValue(sol);
+			delete sol;
 		}
 	}
 

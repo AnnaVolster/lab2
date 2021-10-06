@@ -16,7 +16,7 @@ private:
     double x1;
     double x2;
 public:
-
+    /*
     Square() {
         a = 0;
         b = 0; 
@@ -24,6 +24,7 @@ public:
         x1 = NULL;
         x2 = NULL;
     }
+    */
     Square(double _a, double _b, double _c) {
         a = _a;
         b = _b;
@@ -49,13 +50,13 @@ public:
     }
 
     void print() {
-                cout << "y = ax^2 + bx + c <=> 0 = " << a << "x^2 + " << b << "x + " << c << " <=> d = " << d << " <=> ";
+                cout << "y = ax^2 + bx + c <=> \n0 = " << a << "x^2 + " << b << "x + " << c << " <=> \nd = " << d << " <=> " << endl;
            
         if (x2!=NULL) {
-            cout << "x[1] = " << x1 << ", x[2] = " << x2;
+            cout << "x[1] = " << x1 << ", x[2] = " << x2 << endl;
         }
         else {
-            cout << "x = " << x1;
+            cout << "x = " << x1 << endl;
         }
     }
 
