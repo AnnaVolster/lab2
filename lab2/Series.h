@@ -1,4 +1,3 @@
-#pragma once
 #include "Solution.h"
 
 class Series : public Solution {

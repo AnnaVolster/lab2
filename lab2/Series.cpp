@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include "Series.h"
 using namespace std;

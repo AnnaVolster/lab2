@@ -16,7 +16,6 @@ Square::Square(double _a, double _b, double _c) {
     x2 = NULL;
 }
 
-
 void Square::calculate() {
     d = b * b - 4 * a * c;
 
@@ -44,4 +43,3 @@ void Square::print() {
 }
 
 Square::~Square() {}
-};
