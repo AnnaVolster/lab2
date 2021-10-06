@@ -35,10 +35,12 @@ void Interactor::interactor()
 			break;
 		}
 		}
+		
 		if (sol) {
 			source.EnterValue(sol);
 			delete sol;
 		}
+		
 	}
 
 }

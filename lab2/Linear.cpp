@@ -1,11 +1,9 @@
-/*
 #include "Linear.h"
 #include <iostream>
 #include "Solution.h"
 
 
 using namespace std;
-using namespace Linear;
 
 Linear::Linear() {
     k = 0;
@@ -19,14 +17,13 @@ Linear::Linear(double _k, double _b) {
 }
 
 
-void Liner::calculate(double b, double k, double value) {
+void Linear::calculate() {
     value = -b / k;
 }
 
-void Liner::print(double b, double k, double value) {
+void Linear::print() {
     cout << "y = kx + b <=> 0 = " << k << "x + " << b << " <=> x = -" << k << "/" << b << " <=> x = " << value << endl;
 }
 
 Linear::~Linear() {}
 
-*/
