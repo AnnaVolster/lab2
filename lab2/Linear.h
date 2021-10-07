@@ -13,9 +13,7 @@ public:
     
     Linear();
     
-
     Linear(double _k, double _b);
-    
     
     void calculate();
     

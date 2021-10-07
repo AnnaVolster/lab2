@@ -26,7 +26,7 @@ void Square::calculate() {
 
         x1 = ((-b + sqrt(d)) / (2.0 * a));
 
-        if (abs(d) > 0.000000000001)
+        if (d > 0.000000000001)
             x2 = ((-b - sqrt(d)) / (2.0 * a));
     }
 }
